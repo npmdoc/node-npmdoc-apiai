@@ -1,0 +1,636 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/api-ai/api-ai-node-js#readme">apiai (v4.0.2)</a>
+</h1>
+<h4>Node.js SDK for api.ai</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai">module apiai</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>contexts_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>delete_contexts_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>event_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>exceptions</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>json_api_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>query_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>text_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>tts_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>user_entities_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>voice_request</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.contexts_request">module apiai.contexts_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.contexts_request.ContextsRequest">
+            function <span class="apidocSignatureSpan">apiai.contexts_request.</span>ContextsRequest
+            <span class="apidocSignatureSpan">(application, contexts, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.delete_contexts_request">module apiai.delete_contexts_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.delete_contexts_request.DeleteContextsRequest">
+            function <span class="apidocSignatureSpan">apiai.delete_contexts_request.</span>DeleteContextsRequest
+            <span class="apidocSignatureSpan">(application, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.event_request">module apiai.event_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.event_request.EventRequest">
+            function <span class="apidocSignatureSpan">apiai.event_request.</span>EventRequest
+            <span class="apidocSignatureSpan">(application, event, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.exceptions">module apiai.exceptions</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.exceptions.ServerError">
+            function <span class="apidocSignatureSpan">apiai.exceptions.</span>ServerError
+            <span class="apidocSignatureSpan">(statusCode, responseBody, message)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.json_api_request">module apiai.json_api_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.json_api_request.JSONApiRequest">
+            function <span class="apidocSignatureSpan">apiai.json_api_request.</span>JSONApiRequest
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.query_request">module apiai.query_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.query_request.QueryRequest">
+            function <span class="apidocSignatureSpan">apiai.query_request.</span>QueryRequest
+            <span class="apidocSignatureSpan">(application, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.request">module apiai.request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.request.Request">
+            function <span class="apidocSignatureSpan">apiai.request.</span>Request
+            <span class="apidocSignatureSpan">(application, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.text_request">module apiai.text_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.text_request.TextRequest">
+            function <span class="apidocSignatureSpan">apiai.text_request.</span>TextRequest
+            <span class="apidocSignatureSpan">(application, query, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.tts_request">module apiai.tts_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.tts_request.TTSRequest">
+            function <span class="apidocSignatureSpan">apiai.tts_request.</span>TTSRequest
+            <span class="apidocSignatureSpan">(application, text, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.user_entities_request">module apiai.user_entities_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.user_entities_request.UserEntitiesRequest">
+            function <span class="apidocSignatureSpan">apiai.user_entities_request.</span>UserEntitiesRequest
+            <span class="apidocSignatureSpan">(application, user_entities_body, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.apiai.voice_request">module apiai.voice_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.voice_request.VoiceRequest">
+            function <span class="apidocSignatureSpan">apiai.voice_request.</span>VoiceRequest
+            <span class="apidocSignatureSpan">(application, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai" id="apidoc.module.apiai">module apiai</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.contexts_request" id="apidoc.module.apiai.contexts_request">module apiai.contexts_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.contexts_request.ContextsRequest" id="apidoc.element.apiai.contexts_request.ContextsRequest">
+        function <span class="apidocSignatureSpan">apiai.contexts_request.</span>ContextsRequest
+        <span class="apidocSignatureSpan">(application, contexts, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ContextsRequest(application, contexts, options) {
+    var self = this;
+
+    self.contexts = contexts;
+    self.sessionId = options.sessionId;
+
+    ContextsRequest.super_.apply(this, [application, options]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.delete_contexts_request" id="apidoc.module.apiai.delete_contexts_request">module apiai.delete_contexts_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.delete_contexts_request.DeleteContextsRequest" id="apidoc.element.apiai.delete_contexts_request.DeleteContextsRequest">
+        function <span class="apidocSignatureSpan">apiai.delete_contexts_request.</span>DeleteContextsRequest
+        <span class="apidocSignatureSpan">(application, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DeleteContextsRequest(application, options) {
+    var self = this;
+
+    self.sessionId = options.sessionId;
+
+    DeleteContextsRequest.super_.apply(this, [application, options]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.event_request" id="apidoc.module.apiai.event_request">module apiai.event_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.event_request.EventRequest" id="apidoc.element.apiai.event_request.EventRequest">
+        function <span class="apidocSignatureSpan">apiai.event_request.</span>EventRequest
+        <span class="apidocSignatureSpan">(application, event, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventRequest(application, event, options) {
+    EventRequest.super_.apply(this, [application, options]);
+
+    var self = this;
+    self.event = event;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.exceptions" id="apidoc.module.apiai.exceptions">module apiai.exceptions</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.exceptions.ServerError" id="apidoc.element.apiai.exceptions.ServerError">
+        function <span class="apidocSignatureSpan">apiai.exceptions.</span>ServerError
+        <span class="apidocSignatureSpan">(statusCode, responseBody, message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ServerError(statusCode, responseBody, message) {
+    var self = this;
+
+    Error.captureStackTrace(this, ServerError);
+
+    self.statusCode = statusCode;
+    self.responseBody = responseBody;
+
+    this.name = this.constructor.name;
+    this.message = message;
+
+    ServerError.super_.apply(this, []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.json_api_request" id="apidoc.module.apiai.json_api_request">module apiai.json_api_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.json_api_request.JSONApiRequest" id="apidoc.element.apiai.json_api_request.JSONApiRequest">
+        function <span class="apidocSignatureSpan">apiai.json_api_request.</span>JSONApiRequest
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function JSONApiRequest() {
+    JSONApiRequest.super_.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.query_request" id="apidoc.module.apiai.query_request">module apiai.query_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.query_request.QueryRequest" id="apidoc.element.apiai.query_request.QueryRequest">
+        function <span class="apidocSignatureSpan">apiai.query_request.</span>QueryRequest
+        <span class="apidocSignatureSpan">(application, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function QueryRequest(application, options) {
+    var self = this;
+
+    self.language = application.language;
+
+    if ('timezone' in options) {
+        self.timezone = options.timezone;
+    }
+
+    if ('resetContexts' in options) {
+        self.resetContexts = options.resetContexts;
+    }
+
+    if ('contexts' in options) {
+        self.contexts = options.contexts;
+    }
+
+    if ('entities' in options) {
+        self.entities = options.entities;
+    }
+
+    if ('sessionId' in options) {
+        self.sessionId = options.sessionId;
+    } else {
+        throw Error(
+            'Now \'sessionId\' is required parameter. Please add this parameter to \'options\' of request.\n' +
+            'Like following example:\n' +
+            '&gt; var app = ...\n' +
+            '&gt; request = app.textRequest("Hello", {sessionId: "UNIQUE_SESSION_ID"})\n' +
+            '&gt; ... \n'
+        );
+    }
+
+    if ('version' in options) {
+        self.version = options.version;
+    }
+
+    if ('requestSource' in application) {
+        self.requestSource = application.requestSource;
+    }
+
+    if ('originalRequest' in options) {
+        self.originalRequest = options.originalRequest;
+    }
+
+    QueryRequest.super_.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.request" id="apidoc.module.apiai.request">module apiai.request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.request.Request" id="apidoc.element.apiai.request.Request">
+        function <span class="apidocSignatureSpan">apiai.request.</span>Request
+        <span class="apidocSignatureSpan">(application, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Request(application, options) {
+    var self = this;
+
+    self.clientAccessToken = application.clientAccessToken;
+
+    self.hostname = application.hostname;
+
+    self.endpoint = options.endpoint;
+    self.requestSource = application.requestSource;
+
+    var _http = application.secure ? https : http;
+
+    var requestOptions = self._requestOptions();
+
+    requestOptions.agent = application._agent;
+
+    var request = _http.request(requestOptions, function(response) {
+        self._handleResponse(response);
+    });
+
+    request.on('error', function(error) {
+        self.emit('error', error);
+    });
+
+    self.request = request;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.text_request" id="apidoc.module.apiai.text_request">module apiai.text_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.text_request.TextRequest" id="apidoc.element.apiai.text_request.TextRequest">
+        function <span class="apidocSignatureSpan">apiai.text_request.</span>TextRequest
+        <span class="apidocSignatureSpan">(application, query, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TextRequest(application, query, options) {
+    TextRequest.super_.apply(this, [application, options]);
+
+    var self = this;
+    self.query = query;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.tts_request" id="apidoc.module.apiai.tts_request">module apiai.tts_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.tts_request.TTSRequest" id="apidoc.element.apiai.tts_request.TTSRequest">
+        function <span class="apidocSignatureSpan">apiai.tts_request.</span>TTSRequest
+        <span class="apidocSignatureSpan">(application, text, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TTSRequest(application, text, options) {
+    var self = this;
+
+    self.text = text;
+
+    self.language = options.language || options.lang || 'en-US';
+
+    if('writeStream' in options){
+        self.writeStream = options.writeStream;
+    } else {
+        throw new Error('\'writeStream\' cannot be empty.');
+    }
+
+    TTSRequest.super_.apply(this, [application, options]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.user_entities_request" id="apidoc.module.apiai.user_entities_request">module apiai.user_entities_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.user_entities_request.UserEntitiesRequest" id="apidoc.element.apiai.user_entities_request.UserEntitiesRequest">
+        function <span class="apidocSignatureSpan">apiai.user_entities_request.</span>UserEntitiesRequest
+        <span class="apidocSignatureSpan">(application, user_entities_body, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function UserEntitiesRequest(application, user_entities_body, options) {
+    var self = this;
+
+    self.user_entities_body = user_entities_body;
+
+    UserEntitiesRequest.super_.apply(this, [application, options]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.apiai.voice_request" id="apidoc.module.apiai.voice_request">module apiai.voice_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.voice_request.VoiceRequest" id="apidoc.element.apiai.voice_request.VoiceRequest">
+        function <span class="apidocSignatureSpan">apiai.voice_request.</span>VoiceRequest
+        <span class="apidocSignatureSpan">(application, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function VoiceRequest(application, options) {
+    var self = this;
+    self.boundary = self._generateBoundary();
+
+    VoiceRequest.super_.apply(this, [application, options]);
+
+    self._sendMetaData();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
