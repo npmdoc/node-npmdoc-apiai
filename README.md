@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/apiai.png?downloads=true)](https://www.npmjs.com/package/apiai)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-apiai/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-apiai%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-apiai/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-apiai/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-apiai%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-apiai/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-apiai/build/screenCapture.npmPackageListing.svg)
 
