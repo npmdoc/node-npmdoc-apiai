@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.apiai.apiai">
+            function <span class="apidocSignatureSpan"></span>apiai
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">apiai.</span>contexts_request</span>
 
         </li>
@@ -276,6 +285,31 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.apiai" id="apidoc.module.apiai">module apiai</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.apiai.apiai" id="apidoc.element.apiai.apiai">
+        function <span class="apidocSignatureSpan"></span>apiai
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createApplication() {
+    if (arguments.length &#x3e; 1) {
+        if (typeof arguments[1] == &#x22;string&#x22;) {
+            return createApplicationDeprecated.apply(this, arguments);
+        } else if (typeof arguments[1] == &#x22;object&#x22;) {
+            return createApplicationNew.apply(this, arguments);
+        } else {
+            throw new Error(&#x27;Wrong parameters of initialization.&#x27;);
+        }
+    } else {
+        return createApplicationNew.apply(this, arguments);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
 
